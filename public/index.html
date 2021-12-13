@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire avec SASS</title>
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+
+    <form method="post" action="">
+        <div>
+            <div>
+                <label id="label1" for="firstname">Prénom</label>
+                <input class="test" id="firstname" type="text" name="firstname" required>
+            </div>
+            <div>
+                <label id="label2" for="lastname">Nom</label>
+                <input class="test" id="lastname" type="text" name="lastname" required>
+            </div>
+        </div>
+
+        <label id="label3" for="email">Email</label>
+        <input class="test" id="email" type="email" name="email" required>
+        <label id="label4" for="phone">Téléphone</label>
+        <input class="test" id="phone" type="tel" name="phone">
+        <label id="label5" for="birth">Date de naissance</label>
+        <input class="test" id="birth" type="date" name="birth" required>
+
+        <input id="button" type="submit" name="send" value="Créer">
+    </form>
+
+</body>
+</html>

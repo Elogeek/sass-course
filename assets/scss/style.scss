@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$color: #e7e7e7;
+$border: 1px solid #d9d9d9;
+$size_10: 10px;
+$center: center;
+$none: none;
+
+body {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  align-items: $center;
+  justify-content: $center;
+
+  form {
+
+    background-color: #4980be;
+    $width: 40%;
+    border: $border;
+    border-radius: $size_10;
+    display: flex;
+    flex-direction: column;
+    align-items: $center;
+    justify-content: $center;
+    width: $width;
+    font-size: 20px;
+    padding: 15px;
+
+    &:hover {
+      border: 5px solid black;
+      box-shadow: 5px $size_10 $size_10 #ffffff;
+    }
+
+    label {
+      color: $color;
+      margin: 15px;
+    }
+    #birth {
+      background: #a0d9d9;
+    }
+
+    input {
+      width: 80%;
+      border: $none;
+      background-color: plum;
+      border-radius: $size_10;
+      padding: 5px;
+      font-size: 20px;
+
+      &:focus {
+        $color: black;
+        background-color: $color;
+      }
+
+    }
+
+    #button {
+      margin: 15px;
+      width: initial;
+      background-color: #239DBE;
+      $color: white;
+      font-size: 30px;
+
+      &:hover {
+        background-color: paleturquoise;
+        font-weight: bold;
+      }
+    }
+
+    #label3::first-letter {
+      $color: black;
+      background-color: $color;
+      font-size: 30px;
+      padding: 5px;
+      border-radius: 50% 50% 0 0;
+      margin: 0 5px;
+    }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: $center;
+        align-items: $center;
+        width: 90%;
+
+        div {
+          flex-direction: column;
+          width: 100%;
+          display: flex;
+          align-items: $center;
+          justify-content: $center;
+
+          .test:nth-child(2) {
+            background-color: #a0d9d9;
+          }
+
+          #label1, #label2 {
+            font-style: italic;
+          }
+        }
+      }
+
+      .test {
+        color: #136bde;
+      }
+    }
+  }
